@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Singh - Portfolio</title>
+    <meta name="description" content="Aditya Singh - B.Tech CSE, Java Developer, AI entrepreneur.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Audiowide&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar (Sticky) -->
+    <header class="navbar">
+        <div class="logo">Aditya Singh</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <!-- Blurred background blobs -->
+        <div class="blob blue"></div>
+        <div class="blob purple"></div>
+        <div class="hero-content">
+            <h1>Aditya Singh</h1>
+            <h2 id="subtitle"></h2> <!-- Animated typing effect will fill this -->
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+        <h2>About Me</h2>
+        <p>
+            Passionate about Java and AI, I am a B.Tech CSE student focused on web development and startups. I enjoy building scalable Java applications and exploring AI innovations. In web development, I emphasize clean, responsive interfaces and modern JavaScript. I love learning new technologies and turning ideas into working products.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Each skill card with animated progress bar -->
+            <div class="skill-card">
+                <h3>Java</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="90"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>DSA</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="85"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="95"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="90"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="85"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>Git</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="80"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>GitHub</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="85"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <div class="progress"><div class="progress-bar" data-skill-level="75"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Startup Problem Solver Platform</h3>
+                <p>An innovative platform matching startups with problem-solvers and mentors.</p>
+                <p><strong>Tech:</strong> Java, Spring Boot, MySQL</p>
+                <div class="project-links">
+                    <a href="#" class="btn">GitHub</a>
+                    <a href="#" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Student Management System (Java)</h3>
+                <p>Desktop app to manage student records, attendance, and grades.</p>
+                <p><strong>Tech:</strong> Java, JavaFX, SQLite</p>
+                <div class="project-links">
+                    <a href="#" class="btn">GitHub</a>
+                    <a href="#" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Weather Web App</h3>
+                <p>Interactive web app showing weather data using an external API.</p>
+                <p><strong>Tech:</strong> JavaScript, HTML, CSS, OpenWeather API</p>
+                <div class="project-links">
+                    <a href="#" class="btn">GitHub</a>
+                    <a href="#" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>This site itself, showcasing my projects and skills.</p>
+                <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                    <a href="#" class="btn">GitHub</a>
+                    <a href="#" class="btn">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section reveal">
+        <h2>Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2023 - Present</h3>
+                    <p><strong>Manipal University Jaipur</strong> - B.Tech Computer Science</p>
+                </div>
+            </div>
+            <!-- Additional timeline items could be added similarly -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-icons">
+            <!-- Social media links with SVG icons -->
+            <a href="https://github.com/adityasingh" aria-label="GitHub">
+                <!-- GitHub icon (placeholder path) -->
+                <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0z"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/adityasingh" aria-label="LinkedIn">
+                <!-- LinkedIn icon (placeholder path) -->
+                <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+                    <path d="M4 4h4v16H4zM6 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM14 10v10h4v-6c0-4-5-3.7-5 0v6h4v-6c0-2 1-4 3-4s3 2 3 4v6h4V10h-4v1a4 4 0 0 0-8 0z"/>
+                </svg>
+            </a>
+            <a href="mailto:adityasingh@example.com" aria-label="Email">
+                <!-- Email icon (placeholder path) -->
+                <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+                    <path d="M2 4h20v16H2V4zm2 2v12h16V6H4zm8 5L4 6h16l-8 5z"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aditya Singh. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <!-- Main script -->
+    <script src="script.js" defer></script>
+</body>
+</html>
